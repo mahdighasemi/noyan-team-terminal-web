@@ -171,7 +171,7 @@ $(document).ready(function() {
     }
 
 
-    print_delay(`<pre style='color:#52a977;width: 280px;margin:15px auto;'>
+    print_delay(`<pre style='color:#52a977;width: 360px;margin:15px auto;'>
               (((
            (((((((((
         ((((((((((((((
