@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#console::after {
+    content: '_';
+    animation-duration: 0.8s;
+    animation-name: flicker;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+ ::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+a,
+a:visited {
+    color: yellow;
+}
+
+#console {
+    overflow-y: scroll;
+    overflow-wrap: break;
+    word-break: break-all;
+    width: 100vw;
+    height: 100vh;
+    background-color: #051011;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    padding-bottom: 20px;
+}
